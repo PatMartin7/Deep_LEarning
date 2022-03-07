@@ -1,0 +1,25 @@
+Overview:
+Using Tensor Flow we attempted to determine proformance of charitable donations. We affected this change by:
+Preprocessing the data for the neural network
+Train and Evaluate the Model
+Optimizing
+
+
+Data Preprocessing:
+What variable(s) are considered the target(s) for your model?
+THe main dri:ver is the "Is _Successful" value which is a binary
+What variable(s) are considered to be the features for your model?
+Didn't actually limit any variables beyond the is successful feature
+What variable(s) are neither targets nor features, and should be removed from the input data?
+We removed EIN and Name but more could have been dropped once covariance was established
+
+Compiling, Training, and Evaluating the Model
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Two layers of 80 and 30
+Were you able to achieve the target model performance? The model did not cross the 75% optimization threshold.
+What steps did you take to try and increase model performance?
+Tried binning as well as increasing neurons and hidden layers. None had effect. 
+
+
+Summary:
+In truth, none of our attempted optimizations made any meaningful impact on the proformance of the model. Going forward I would cut down on the over 100 features being used in this model since there in likely some covariance associated with several features. Since most of this became binary, we could possibly have used Random Forest to speed up the model proformance. 
